@@ -12,7 +12,7 @@ return {
 		        role = "CREATOR",
 		    },
 		},
-		tags = { "europe", "waggon", "schuettgut", "deutschland", "germany", "UIC", "gueterwagen", "db" },
+		tags = { "europe", "waggon", "viehwagen", "deutschland", "germany", "livestock", "gueterwagen", "db", "cattle", "Verschlagwagen", },
 		tfnetId = { },
 		minGameVersion = 0,
 		dependencies = { },
