@@ -1,0 +1,593 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.258, 1.5, 4.2, },
+		bbMin = { -4.258, -1.5, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.7661581039429, 1.5543934106827, 2.6876463890076, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/viehwagen/rumpf2_2.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rumpf_2_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rad_voll2_lod0.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.04893, 0, 0.469196, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rad_voll2_lod0.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.04893, 0, 0.469196, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/puffer_db2_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					--- Tür Links
+					{
+						animations = {
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_links.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_links.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/bolzen1_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.830119, 1.41323, 1.67464, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_links.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_links.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/bolzen1_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.830119, 1.41323, 2.748, 1, },
+					},
+					{
+						animations = {
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_links.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_links.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/tur_links2_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					--- Tür Rechts ---
+					{
+						animations = {
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/bolzen1_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.830119, -1.41323, 1.67464, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/viehwagen/bolzen_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/bolzen1_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.830119, -1.41323, 2.748, 1, },
+					},
+					{
+						animations = {
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/tur_rechts2_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_de_front",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.81, 1.149, 3.49, 1, },
+					},	
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_de_front",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.81, -1.149, 3.49, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/viehwagen/rumpf2_2.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rumpf_2_lod1.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rad_voll2_lod1.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.04893, 0, 0.469196, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rad_voll2_lod1.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.04893, 0, 0.469196, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/puffer_db2_lod1.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					--- Tür Links
+					{
+						animations = {
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_links.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_links.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/tur_links2_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.07372, 1, },
+					},
+					--- Tür Rechts ---
+					{
+						animations = {
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/tur_rechts2_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.07372, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_de_front",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.81, 1.149, 3.49, 1, },
+					},	
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_de_front",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.81, -1.149, 3.49, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/waggon/viehwagen/rumpf2_2.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rumpf_2_lod2.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rad_voll2_lod2.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.04893, 0, 0.469196, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/rad_voll2_lod2.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.04893, 0, 0.469196, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
+						mesh = "vehicle/waggon/viehwagen/puffer_db2_lod2.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					--- Tür Links
+					{
+						animations = {
+							close_doors_left = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_links.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_left = {
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_links.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/tur_links_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.07372, 1, },
+					},
+					--- Tür Rechts ---
+					{
+						animations = {
+							close_doors_right = {
+								forward = false,
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+							open_doors_right = {
+								params = {
+									id = "vehicle/waggon/viehwagen/tur_rechts.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/waggon/viehwagen/rumpf.mtl", },
+						mesh = "vehicle/waggon/viehwagen/tur_rechts_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -1.07372, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1952,
+			yearTo = 1970,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			name = _("vh24b_name"),
+            description = _("vh14_desc"),
+		},
+		maintenance = {
+			runningCosts = -1,
+			lifespan = 29220
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/waggon/viehwagen/rad_voll2_lod0.msh", },
+					backBackwardParts = { },
+                    backForwardParts = { 11, 12},
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+                {
+					axles = { "vehicle/waggon/viehwagen/rad_voll2_lod1.msh", },
+					backBackwardParts = { },
+                    backForwardParts = { 7, 8 },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+                },
+                {
+					axles = { "vehicle/waggon/viehwagen/rad_voll2_lod2.msh", },
+					backBackwardParts = { },
+					backForwardParts = { },
+					frontBackwardParts = { },
+					frontForwardParts = { },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+                },
+			},
+			engines = { },
+			soundSet = {
+				name = "mw_altGz",
+			},
+			topSpeed = 27.777777778,
+			weight = 15,
+		},
+        cargoSlotProvider = {
+			slots = {	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.55, 0.7, 1.185, 1, },
+					randomId = 1,
+				},
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.707, 0.707, 0, 0, -0.707, 0.707, 0, 0, 0, 0, 1, 0, 3.05, 0, 1.185, 1, },
+					randomId = 2,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.122, 0.993, 0, 0, -0.993, -0.122, 0, 0, 0, 0, 1, 0, 1.05, 0.4, 1.185, 1, },
+					randomId = 3,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.242, -0.970, 0, 0, 0.970, -0.242, 0, 0, 0, 0, 1, 0, 0.05, 0.6, 1.185, 1, },
+					randomId = 4,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.139, 0.990, 0, 0, -0.990, 0.139, 0, 0, 0, 0, 1, 0, -1.05, 0.4, 1.185, 1, },
+					randomId = 5,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.242, -0.970, 0, 0, 0.970, -0.242, 0, 0, 0, 0, 1, 0, -3.05, 0.3, 1.185, 1, },
+					randomId = 6,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.85, -0.6, 1.185, 1, },
+					randomId = 7,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.242, -0.970, 0, 0, 0.970, -0.242, 0, 0, 0, 0, 1, 0, 1.35, -0.3, 1.185, 1, },
+					randomId = 8,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.122, 0.993, 0, 0, -0.993, -0.122, 0, 0, 0, 0, 1, 0, -2.1, 0.3, 1.185, 1, },
+					randomId = 9,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.122, 0.993, 0, 0, -0.993, -0.122, 0, 0, 0, 0, 1, 0, 2.55, 0.5, 2.292, 1, },
+					randomId = 10,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.139, 0.990, 0, 0, -0.990, 0.139, 0, 0, 0, 0, 1, 0, 1.8, 0.45, 2.292, 1, },
+					randomId = 11,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.242, -0.970, 0, 0, 0.970, -0.242, 0, 0, 0, 0, 1, 0, 3.05, -0.4, 2.292, 1, },
+					randomId = 12,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.866, -0.500, 0, 0, 0.500, 0.866, 0, 0, 0, 0, 1, 0, 1.05, -0.3, 2.292, 1, },
+					randomId = 13,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, 0.75, 0.5, 2.292, 1, },
+					randomId = 14,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.139, 0.990, 0, 0, -0.990, 0.139, 0, 0, 0, 0, 1, 0, -0.55, 0, 2.292, 1, },
+					randomId = 15,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, -2.05, -.8, 2.292, 1, },
+					randomId = 16,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.139, 0.990, 0, 0, -0.990, 0.139, 0, 0, 0, 0, 1, 0, -2.80, -0.2, 2.292, 1, },
+					randomId = 17,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { 0.866, -0.500, 0, 0, 0.500, 0.866, 0, 0, 0, 0, 1, 0, -2.25, 0.7, 2.292, 1, },
+					randomId = 18,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.242, -0.970, 0, 0, 0.970, -0.242, 0, 0, 0, 0, 1, 0, -3.30, 0, 2.292, 1, },
+					randomId = 19,
+				},	
+                {
+					models = { 	"animal/sheep.mdl",},
+					group = 0,
+					transf = { -0.985, -0.174, 0, 0, 0.174, -0.985, 0, 0, 0, 0, 1, 0, -1.55, 0, 2.292, 1, },
+					randomId = 20,
+				},
+            },
+        },
+		transportVehicle = {
+			carrier = "RAIL",
+			compartments = {
+				{
+					{
+						{
+							capacity = 32,
+							customCargoModels = {
+								configurations = {
+									{
+										slotLevels = {
+											{ },
+											{ 0 },
+											{ 0 , 1 },
+											{ 0 , 1 , 2 },	
+											{ 0 , 1 , 2,3},
+											{ 0 , 1 , 2,3,4 },
+											{ 0 , 1 , 2,3,4,5 },
+											{ 0 , 1 , 2,3,4,5,6 },
+											{ 0 , 1 , 2,3,4,5,6,7 },
+											{ 0 , 1 , 2,3,4,5,6,7,8 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13,14 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13,14,15 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 },
+											{ 0 , 1 , 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 },
+                                        },
+									},
+								},
+							},
+							type = "GRAIN",
+						},
+					},
+				}, 
+			},  
+			loadSpeed = 1,
+			multipleUnitOnly = false,
+			groupFileName = "vehicle/waggon/viehwagen/menu_viehwagen2.mdl",
+			reversible = false,
+		},
+	},
+	version = 1,
+}
+end
