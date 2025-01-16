@@ -310,7 +310,7 @@ return {
 			},
 			static = false,
 			visibleFrom = 150,
-			visibleTo = 500,
+			visibleTo = 300,
 		},
 		{
 			node = {
@@ -380,7 +380,7 @@ return {
 				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 			},
 			static = false,
-			visibleFrom = 500,
+			visibleFrom = 300,
 			visibleTo = 1000,
 		},
 	},
