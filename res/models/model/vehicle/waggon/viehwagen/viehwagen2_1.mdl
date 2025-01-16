@@ -299,12 +299,6 @@ return {
 						name = "rad",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.04893, 0, 0.469196, 1, },
 					},
-					{
-						materials = { "vehicle/waggon/viehwagen/beweglich2_1.mtl", },
-						mesh = "vehicle/waggon/viehwagen/puffer_db2_lod2.msh",
-						name = "rumpf",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
 					--- Tür Links
 					{
 						animations = {
